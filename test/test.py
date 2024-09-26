@@ -1,4 +1,4 @@
-from main import genderSelect
+from src.main import genderSelect
 from unittest.mock import patch
 
 def test_genderSelect():
