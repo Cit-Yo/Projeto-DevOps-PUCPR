@@ -9,8 +9,7 @@ jobs:
         steps:
         - uses: actions/checkout@v4
         - name: Run Discord Webhook
-          uses: EDUJOS/ds-webhook@v1.0.0
+          uses: fateyan/action-discord-notifier@v1
           with:
-            webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
-            title: "Some Title"
-            description: "Some Description"
+            message-title: New Commits Pushed
+            webhook: ${{ secrets.DISCORD_WEBHOOK }}
